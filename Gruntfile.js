@@ -51,20 +51,23 @@ module.exports = function(grunt) {
         ]
       }
     },
-
-    react: {
-      jsx: {
-        files: [
-          {
-            expand: true,
-            cwd: 'public/js/ledger',
-            src: [ '**/*.jsx' ],
-            dest: 'public/js/ledger',
-            ext: '.js'
-          }
-        ]
-      }
-    },
+      babel: {
+	  options: {
+	      plugins: ['transform-react-jsx'],
+	      presets: ['es2015', 'react']
+	  },
+	  jsx: {
+              files: [
+		  {
+		      expand: true,
+		      cwd: 'public/js/ledger',
+		      src: [ '**/*.jsx' ],
+		      dest: 'public/js/ledger',
+		      ext: '.js'
+		  }
+              ]
+	  }
+      },
 
     recess: {
       dist: {
