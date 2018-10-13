@@ -45,7 +45,7 @@
     "express": "~4.15.2",
     "express-session": "^1.15.2",
     "http-proxy": "^1.11.1",
-    "ledger-rest": "ilemonlaughlin/ledger-rest",
+    "ledger-rest": "lemonlaug/ledger-rest",
     "lodash": "~2.4.1",
     "method-override": "^2.3.8",
     "morgan": "^1.8.1",
