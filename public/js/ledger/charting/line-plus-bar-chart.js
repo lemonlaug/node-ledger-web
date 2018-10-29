@@ -68,11 +68,11 @@ define([
 
         chart.y1Axis
           .axisLabel('Amount')
-          .tickFormat(function(d) { return '£' + d3.format(',.2f')(d); });
+          .tickFormat(function(d) { return d3.format(',.2f')(d); });
 
         chart.y2Axis
           .axisLabel('Amount')
-          .tickFormat(function(d) { return '£' + d3.format(',.2f')(d); });
+          .tickFormat(function(d) { return d3.format(',.2f')(d); });
 
         d3.select(el)
           .datum(sourceData)
