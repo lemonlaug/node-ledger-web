@@ -4,6 +4,8 @@ This fork just changes the dependency to use a patched version of ledger-rest.
 
 It also removes some hardcoded units from the axes of the charts.
 
+This is designed to work with [this docker container](https://github.com/lemonlaug/docker-ledger-web).
+
 # ledger-web
 
 Web front-end to access the Ledger command-line interface ([ledger-cli.org](http://ledger-cli.org/)).
